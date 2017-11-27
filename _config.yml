@@ -264,3 +264,38 @@ defaults:
       comments: # true
       share: true
       related: true
+
+
+  # _collection
+  - scope:
+      path: ""
+      type: penetration-testing
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments:  true
+      share: true
+      related: true
+
+     - scope:
+         path: ""
+         type: security
+       values:
+         layout: single
+         author_profile: true
+         read_time: true
+         comments:  true
+         share: true
+         related: true
+
+        - scope:
+            path: ""
+            type: networking
+          values:
+            layout: single
+            author_profile: true
+            read_time: true
+            comments:  true
+            share: true
+            related: true

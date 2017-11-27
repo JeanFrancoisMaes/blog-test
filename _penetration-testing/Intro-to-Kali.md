@@ -8,13 +8,13 @@ tags:
 
 ---
 
-<center> [Link to the video Series](https://app.pluralsight.com/library/courses/kali-linux-penetration-testing-ethical-hacking/table-of-contents) </center>
+[Link to the video Series](https://app.pluralsight.com/library/courses/kali-linux-penetration-testing-ethical-hacking/table-of-contents)
 
-#### Checking for rootkits:
+### Checking for rootkits:
 
  you can check for rootkits on kali by using the ```chkrootkit``` command in terminal.
 
-#### Step 1: Information Gathering:
+### Step 1: Information Gathering:
 
  ![Image of Information gathering workflow](/assets/images/infoworkflow.png)
 
