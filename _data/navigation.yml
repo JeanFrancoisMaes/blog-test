@@ -6,8 +6,8 @@ main:
    - title: "Articles"
      url: /collection-archive/
 
-   - title: "Categories"
-     url: /category-archive/
+   #- title: "Categories"
+   #  url: /categories/
 
    - title: "Search"
      url: "/search/"

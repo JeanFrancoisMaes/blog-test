@@ -85,29 +85,29 @@ analytics:
 author:
   name             : "Jean-Francois Maes"
   avatar           : "/assets/images/me.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Young Graduate with special interest in Security and Automation"
+  bio              : "Young Graduate at Dimension Data with special interest in Security and Automation & Co-Founder of Joy-Time"
   location         : "Belgium"
   email            :
-  uri              :
+  uri              : https://joy-time.be
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : https://github.com/JeanFrancoisMaes
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "jean-francois-maes-6a201890" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          :
+  twitter          : https://twitter.com/Jean_Maes_1994
   vine             :
   weibo            :
   xing             :
@@ -236,6 +236,19 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+collections:
+  penetration-testing:
+    output: true
+    permalink: /:collection:/:path/
+
+  security:
+    output: true
+    permalink: /:collection:/:path/
+
+  networking:
+    output: true
+    permalink: /:collection:/path/
 
 
 # Defaults
