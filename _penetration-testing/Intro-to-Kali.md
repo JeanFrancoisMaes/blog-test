@@ -5,13 +5,16 @@ categories:
  - Penetration-Testing
 tags:
  - pentest
----
-<center>[Link to the video Series](https://app.pluralsight.com/library/courses/kali-linux-penetration-testing-ethical-hacking/table-of-contents) </center>
 
- #### Checking for rootkits:
+---
+
+<center> [Link to the video Series](https://app.pluralsight.com/library/courses/kali-linux-penetration-testing-ethical-hacking/table-of-contents) </center>
+
+#### Checking for rootkits:
+
  you can check for rootkits on kali by using the ```chkrootkit``` command in terminal.
 
- #### Step 1: Information Gathering:
+#### Step 1: Information Gathering:
 
  ![Image of Information gathering workflow](/assets/images/infoworkflow.png)
 
