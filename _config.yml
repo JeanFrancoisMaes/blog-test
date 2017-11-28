@@ -285,14 +285,13 @@ defaults:
       comments:          true
       share:             true
       related:           true
-
-    - scope:
-        path:            ""
-        type:            networking
-      values:
-        layout:          single
-        author_profile:  true
-        read_time:       true
-        comments:        true
-        share:           true
-        related:         true
+  - scope:
+      path:            ""
+      type:            networking
+    values:
+      layout:          single
+      author_profile:  true
+      read_time:       true
+      comments:        true
+      share:           true
+      related:         true
