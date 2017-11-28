@@ -16,7 +16,7 @@ tags:
 
 ### Step 1: Information Gathering:
 
- ![Image of Information gathering workflow](/assets/images/infoworkflow.png)
+{% raw %}![alt]({{ site.url }}{{ site.baseurl }}/assets/images/infoworkflow.png){% endraw %}
 
 
 
