@@ -16,20 +16,7 @@ tags:
 
 ### Step 1: Information Gathering:
 
-![alt](https://jeanfrancoismaes.github.io/work-adventures/assets/images/infoworkflow.png)
-
-
-
-{% capture fig_img %}
-![Foo]({{ "/assets/images/infoworkflow.png" | absolute_url }})
-{% endcapture %}
-
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>A good workflow for information gathering.</figcaption>
-</figure>
-
-
+![workflow](https://jeanfrancoismaes.github.io/work-adventures/assets/images/infoworkflow.png)
 
 
 * Always check the website first. You can learn a lot from there already. Stuff like email, sometimes even management information, check the job listings to see what kind of technology they use.
