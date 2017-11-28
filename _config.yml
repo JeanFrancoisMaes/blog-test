@@ -13,9 +13,9 @@ title                    : "Jean's Work Adventures"
 title_separator          : "-"
 name                     : "Jean"
 description              : "on this site I'll write my thoughts, and try to keep them structured, during my work journey."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      : "https://jeanfrancoismaes.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/work-adventures"  # the subpath of your site, e.g. "/blog"
+repository               : "JeanFrancoisMaes/work-adventures" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
