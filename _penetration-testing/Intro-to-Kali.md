@@ -17,7 +17,7 @@ tags:
 ### Step 1: Information Gathering:
 
 {% raw %}![alt]({{ site.url }}{{ site.baseurl }}/assets/images/infoworkflow.png){% endraw %}
-https://jeanfrancoismaes.github.io/work-adventures/assets/images/infoworkflow.png
+
 
 
 
