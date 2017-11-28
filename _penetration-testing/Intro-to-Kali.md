@@ -48,3 +48,17 @@ If the application is behind a WAF the output would look like this:
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>this website is behind a WAF</figcaption>
 </figure>
+
+#### Check for loadbalancers
+
+It's nice to know if your target does loadbalancing, and if so, what kind of loadbalncing it's doing. To check this out we can use the tool ```lbd ```
+If the application uses loadbalancing you would get a result simmilar to this one:
+
+{% capture fig_img %}
+![wafwoofscreenshot]({{ "/assets/images/lbdpositive.png" | absolute_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>this website is using LoadBalancing</figcaption>
+</figure>
