@@ -16,7 +16,18 @@ tags:
 
 ### Step 1: Information Gathering:
 
-{% raw %}![alt]({{ site.url }}{{ site.baseurl }}/assets/images/infoworkflow.png){% endraw %}
+![alt](https://jeanfrancoismaes.github.io/work-adventures/assets/images/infoworkflow.png)
+
+
+
+{% capture fig_img %}
+![Foo]({{ "/assets/images/infoworkflow.png" | absolute_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>A good workflow for information gathering.</figcaption>
+</figure>
 
 
 
