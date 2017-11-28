@@ -33,3 +33,18 @@ tags:
 	* 	Internal Pentest
 
 * Tools like Google Dorks together with the vulnrabilityDB can sometimes be used to extract some sensitive data without much efford.
+
+#### Checking for a Web Application Firewall (WAF)
+
+There is a nice tool in Kali that will tell you if your webapplication is behind a Web Application Firewall, It's called ```wafw00f``` using this tool is as simple as just typing ```wafw00f http://example.com ``` in your kali terminal
+
+If the application is behind a WAF the output would look like this:
+
+{% capture fig_img %}
+![wafwoofscreenshot]({{ "/assets/images/wafwoofpositive.png" | absolute_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>this website is behind a WAF</figcaption>
+</figure>
