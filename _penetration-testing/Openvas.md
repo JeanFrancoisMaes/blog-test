@@ -1,5 +1,5 @@
 ---
-title: Openvas cheat sheet 
+title: Openvas cheat sheet
 excerpt: >-
   This article will contain some brief info on how to use openvas.
 categories:

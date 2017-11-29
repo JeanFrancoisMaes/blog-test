@@ -175,4 +175,8 @@ Wireshark can be used as a monitor tool but this will require you to have profou
 
 ### Detecting Man-In-The-Middle (MITM)
 
-As seen on the Image, one of the commonly used methods of sniffing the network is a MITM attack, this kind of attack has lots of permutations.
+As seen on the Image, one of the commonly used methods of sniffing the network is a MITM attack, this kind of attack has lots of permutations:
+ * arp spoof (aka arp poisoning)
+ * session hijack
+ * dns spoof
+ * ssl hijack
