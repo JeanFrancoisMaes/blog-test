@@ -1,5 +1,5 @@
 ---
-title: How to: Openvas
+title: Openvas cheat sheet 
 excerpt: >-
   This article will contain some brief info on how to use openvas.
 categories:
@@ -17,4 +17,4 @@ In the openvas webinterface, go to target, click the star icon and fill in the r
 
 In the openvas webinterface, go to scans, tasks, wizzard or star to create new task
 choose the scan type, this is the most important part.
-You can customize scans in the customize tab. 
+You can customize scans in the customize tab.
