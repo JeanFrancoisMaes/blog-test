@@ -173,10 +173,32 @@ Wireshark can be used as a monitor tool but this will require you to have profou
   <figcaption>The most common sniffing methods</figcaption></figure>
 
 
-### Detecting Man-In-The-Middle (MITM)
+### Man-In-The-Middle (MITM) & Attack Discovery
 
 As seen on the Image, one of the commonly used methods of sniffing the network is a MITM attack, this kind of attack has lots of permutations:
  * arp spoof (aka arp poisoning)
  * session hijack
  * dns spoof
  * ssl hijack
+
+Arp spoof can be detected by wireshark by using the filter: `arp.duplicate-address-frame`
+It's smart to add MAC address columns to Wireshark
+Scans can be detected by wireshark by following the conversation stream and the amount of packets sent, high packets usually means a scan has happened.
+Bruteforce can be detected by wireshark by following data streams
+
+## Metasploit
+
+
+{% capture fig_img %} ![msfexploit]({{ "/assets/images/msfmodules.png" | absolute_url }}) {% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>A list of metasploit modules</figcaption></figure>
+
+
+
+  {% capture fig_img %} ![msfexploit]({{ "/assets/images/msfattack.png" | absolute_url }}) {% endcapture %}
+
+  <figure>
+    {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+    <figcaption>Attack workflow using Metasploit</figcaption></figure>

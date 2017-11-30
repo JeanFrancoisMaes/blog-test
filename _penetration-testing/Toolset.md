@@ -21,3 +21,5 @@ slowhttptest    | DOS tool for linux (tested on kali)
 metasploit      | malware generator and much more
 etherape        | GUI showing eth interface traffic
 Hydra           | Password bruteforcing  
+Driftnet        | captures images sent on wire (non https)
+urlsnarf        | captures HTTP requests  
