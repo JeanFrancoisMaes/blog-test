@@ -3,6 +3,7 @@ layout: archive
 ---
 <p> On this site I'll write mostly to myself, creating various cheat sheets and gists to help myself remember all the cool stuff I've learned. </p>
 <p> Even though it's mostly written to myself, some others might enjoy this too. So enjoy my random thoughts...</p>
+</p><b>disclaimer:</b> All the information on this blog, especially the pentest section, should not be used without explicit permission. Hacking is illegal and I am not responsible for you in any way.</p>
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% for post in paginator.posts %}
@@ -12,7 +13,7 @@ layout: archive
 {% for collection in site.collections %}
   {% unless collection.output == false or collection.label == "posts" %}
     {% capture label %}{{ collection.label }}{% endcapture %}
-    
+
   {% endunless %}
   {% for post in collection.docs %}
     {% unless collection.output == false or collection.label == "posts" %}
