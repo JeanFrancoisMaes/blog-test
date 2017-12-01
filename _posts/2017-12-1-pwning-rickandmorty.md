@@ -6,6 +6,9 @@ tags:
   - Pentest
   - ctf
   - exploits
+
+toc: true
+
 ---
 
 My collegues told me about vulnhub, a website for peneteration tester to test their skills on boot2root VM's. On the site you'll find multiple boxes, with various difficulty levels. Since I just started out, I tried to find an easy VM to test out my skills. Quickly, I found the rick and morty VM, being a huge fan of the show, I wanted to have a look at it. [You can find the VM here:](https://www.vulnhub.com/entry/rickdiculouslyeasy-1,207/) A lot of vulnhub machines work with a capture the flag system, which means there are several files aka "flags" hidden in the machine, your goal is to collect them all. According to the discription this VM has 130 points worth of flags, our objective is to collect all points, and eventually get root access along the way...
@@ -30,8 +33,8 @@ PORT STATE SERVICE VERSION
 22222/tcp open ssh OpenSSH 7.5 (protocol 2.0)
 60000/tcp open unknown
 ```
-
-#### Finding the first flag...
+---
+### Finding the first flag...
 
 A good amount of open ports were found, now is the time to check them out:
 
@@ -39,7 +42,9 @@ A good amount of open ports were found, now is the time to check them out:
 
   `nc 10.0.2.12 1337` We found our first flag worth 10 points! only 120 points more to go...
 
-#### Second Flag
+---
+
+### Second Flag
 
 After finding that flag I switched to port 60000:
 
@@ -47,15 +52,22 @@ After finding that flag I switched to port 60000:
 
 This gave me some sort of shell, but with very little commands that could be used I used `ls` and saw a FLAG.txt file `cat` revealed the content, it's worth 10 points! 110 more to go
 
-#### Third Flag
+---
+
+### Third Flag
 
 After this I checked port 9090, being a http protocol, I used my webbrowser: another flag found! 10 points, 30 down, 100 to go...
 
-#### Fourth Flag
+---
+
+
+### Fourth Flag
 
 Time to check the FTP connection `ftp 10.0.2.12` I tried the anonymous user and empty password in case it was using anonymous FTP, turns out that was a good call because I got in! there was a flag file present, again worth 10 points, so we already have 40 points and didn't even take a look at the web application yet..
 
-#### Fifth FLAG
+---
+
+### Fifth FLAG
 
 I accessed the website in my browser, being greeted by morty but other than that nothing special,... Time to use `dirb` to crawl the webpage and show any hidden folders: `dirb http://10.0.2.12`
 
@@ -83,13 +95,17 @@ We see users called Summer,RickSanchez and Morty
 
 Winter is the last name of Summer in the show, so let's try SSH `ssh Summer@10.0.2.12 -p 22222` password Winter and voila, we are logged in with SSH onto the machine, we don't need our shell we established with the web vulnerability anymore, and another flag is waiting in Summers homedir, sweet! 10 points, 60 in total, going strong!
 
-#### Sixth Flag
+---
+
+### Sixth Flag
 
 I also found out using `ls -lah` that Summer has read access to the other users directories, so naturally it's time to take a peek: Morty had some cool files in his directory, because the box we are in has limited tools, i copyed them over to my own machine using `scp -P 22222 Summer@10.0.2.12:/home/Morty/Safe_Password.jpg .` it's an image file and images have exif data, there is a password there! the password is Meeseek, I doubt that Rick or even Morty use Meeseek as password, there was also a file called journal.txt.zip I copied this over with `scp` using the same method as described above.
 
 trying to unzip this file prompts me for a password, I typed in Meeseek and I got in reading the journal gave us the flag 131333 worth 20 points, bringing our total to 80 already.
 
-#### Yet Another FLAG
+---
+
+### Yet Another FLAG
 
 In the journal morty talked about rick brabelling about a safe, and when checking Rick's direcotry there is indeed a safe, we copy it to our machine and execute it with the password 131333 and we get a message from Rick:
 
@@ -103,7 +119,9 @@ One of the words in my old bands name.
 
 And we also got a flag worth another 20 points, bringing our points to 100, we are now close to the end! If you don't watch Rick and Morty you can google what Rick's band name was, spoiler: it's called The Flesh Curtains It's time to create a wordlist with the above specifics, you can tackle this by making your own script which could look like this:
 
-#### To Root or not to root, that is the question.
+---
+
+### To Root or not to root, that is the question.
 
 ```
 from string import ascii_uppercase
