@@ -10,7 +10,8 @@ layout: archive
   {% include archive-single.html %}
 {% endfor %}
 
-{% for collection in site.collections %}
+<!--
+{% for collection in paginator.collections %}
   {% unless collection.output == false or collection.label == "posts" %}
     {% capture label %}{{ collection.label }}{% endcapture %}
 
@@ -21,5 +22,6 @@ layout: archive
     {% endunless %}
   {% endfor %}
 {% endfor %}
+-->
 
 {% include paginator.html %}
