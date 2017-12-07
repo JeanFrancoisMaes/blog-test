@@ -437,11 +437,11 @@ We are now able to read the second flag!
 
 This is a bit tricky, I did not find anything to exploit on this system...
 
-Let's see what is owned by root by using `find / -perm -4000 2>/dev/null` this command will show all files owned by root, that we can access too.
+Let's see what is owned by root by using `find / -user root -perm -4000 2>/dev/null` this command will show all files owned by root, that we can access too.
 I see `nmap` is amongst the programs.
 
 
-after doing some research I found this [blog](https://null-byte.wonderhowto.com/how-to/use-misconfigured-suid-bit-escalate-privileges-get-root-0173929/)
+after doing some research I found this [blog](https://null-byte.wonderhowto.com/how-to/use-misconfigured-suid-bit-escalate-privileges-get-root-0173929/) and [blog](https://pentestlab.blog/2017/09/25/suid-executables/)
 
 appearantly nmap has an --interactive mode  which spawns a shell and we can use this shell to escalate ourselves to Root
 
