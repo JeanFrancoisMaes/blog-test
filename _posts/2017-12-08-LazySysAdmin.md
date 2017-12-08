@@ -1,6 +1,15 @@
-----
+---
+title: 'Pentest: Lazy Sys Admin  '
+categories:
+  - Penetration-Testing
+tags:
+  - Pentest
+  - ctf
+  - exploits
 
-----
+toc: true
+---
+
 
 Another day another lab, this is going to be the last linux VM for a while, I'll do more of them at some point but for now I'll have to study for CCNA and after that I'd like to take a look at some windows machines. On todays menu is a vulnhub box called LazySysAdmin, it can be found [here](https://www.vulnhub.com/entry/lazysysadmin-1,205/)
 
